@@ -8,11 +8,21 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <section class="grid grid-cols-2 bg-green-300 p-10">
-      <div id="readProduk" class="col-span-1 space-y-4"></div>
-      <div id="createProduk" class="col-span-1"></div>
-      <!-- <div id="updateProduk" class="col-span-1"></div>
-      <div id="deleteProduk" class="col-span-1"></div>  -->
+    <h1 class="text-5xl font-serif text-blue-300 text-center mb-10 mt-10">Restaurant</h1>
+    <section class="grid grid-cols-2 gap-4 bg-green-300 p-10">
+      <div class="grid-cols-1">
+        <h2 class="text-3xl font-bold mb-4 text-center">Tambah Produk</h2>
+        <input type="hidden" id="productId">
+        <input type="text" id="productName" placeholder="Nama Produk" class="w-full p-2 border rounded mb-2">
+        <input type="number" id="productPrice" placeholder="Harga" class="w-full p-2 border rounded mb-2">
+        <input type="text" id="productImage" placeholder="URL Gambar" class="w-full p-2 border rounded mb-2">
+        <textarea id="productDesc" placeholder="Deskripsi" class="w-full p-2 border rounded mb-2"></textarea>
+        <button id="saveProduct" class="w-full bg-blue-500 text-white p-2 rounded">Simpan Produk</button>
+      </div>
+      <div class="grid-cols-1">
+        <h2 class="text-3xl font-bold mb-4 text-center">Daftar Produk</h2>
+        <div id="productList" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
+      </div>
     </section>
     <script src="./restaurant.js"></script>
   </body>
