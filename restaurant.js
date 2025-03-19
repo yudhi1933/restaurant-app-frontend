@@ -101,14 +101,7 @@ $(document).ready(function () {
       }
     });
   });
-
-
-
-
-
-
-
-
+  
   $(document).on("click", ".edit-product", function () {
     let id = $(this).data("id");
     let price = $(this).data("price");
@@ -116,7 +109,6 @@ $(document).ready(function () {
     let img = ($(this).data("img"));
     let description = decodeURIComponent($(this).data("description"));
     
-    // $('#saveProduct').text("Update produk");
 
     $("#productId").val(id);
     $("#productName").val(name);
